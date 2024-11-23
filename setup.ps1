@@ -43,4 +43,8 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 
 echo $env:POSH_THEMES_PATH
 
+Copy-Item "$PSScriptRoot/Microsoft.PowerShell_profile.ps1" -Destination "$env:USERPROFILE/Documents/WindowsPowerShell" -Recurse -Force
+
+Install-Module -Name Terminal-Icons -Repository PSGallery
+
 Copy-Item -Path "$PSScriptRoot/windows-terminal.json" -Destination "C:\Users\$env:USERNAME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -Force
