@@ -5,3 +5,4 @@ sudo apt install unzip
 curl -s https://ohmyposh.dev/install.sh | bash -s
 git clone https://github.com/JanDeDobbeleer/oh-my-posh.git
 cp .profile ~/.profile
+sudo cp wsl.conf /etc/wsl.conf
